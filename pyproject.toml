@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "nvidia_cloud_functions_py"
-version = "0.1.1"
+name = "nvidia_cloud_functions"
+version = "0.1.2"
 description = ""
 readme = "README.md"
 authors = []
-packages = [{ include = "nvidia_cloud_functions_py" }]
+packages = [{ include = "nvidia_cloud_functions" }]
 
 [tool.poetry.dependencies]
 python = "^3.8"

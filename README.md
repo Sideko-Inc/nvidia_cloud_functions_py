@@ -22,106 +22,106 @@ client = AsyncClient()
 
 ## Module Documentation and Snippets
 
-### [health](nvidia_cloud_functions_py/resources/health/README.md)
+### [assets](nvidia_cloud_functions/resources/assets/README.md)
 
-* [list](nvidia_cloud_functions_py/resources/health/README.md#list) - Get Health Information
+* [create](nvidia_cloud_functions/resources/assets/README.md#create) - Create Asset
+* [delete](nvidia_cloud_functions/resources/assets/README.md#delete) - Delete Asset
+* [get](nvidia_cloud_functions/resources/assets/README.md#get) - Show Asset Details
+* [list](nvidia_cloud_functions/resources/assets/README.md#list) - List Assets
 
-### [nvcf.assets](nvidia_cloud_functions_py/resources/nvcf/assets/README.md)
+### [authorizations.functions](nvidia_cloud_functions/resources/authorizations/functions/README.md)
 
-* [create](nvidia_cloud_functions_py/resources/nvcf/assets/README.md#create) - Create Asset
-* [delete](nvidia_cloud_functions_py/resources/nvcf/assets/README.md#delete) - Delete Asset
-* [get](nvidia_cloud_functions_py/resources/nvcf/assets/README.md#get) - Show Asset Details
-* [list](nvidia_cloud_functions_py/resources/nvcf/assets/README.md#list) - List Assets
+* [create](nvidia_cloud_functions/resources/authorizations/functions/README.md#create) - Authorize Accounts To Invoke Function
+* [delete](nvidia_cloud_functions/resources/authorizations/functions/README.md#delete) - Delete All Extra Authorizations For Function
+* [get](nvidia_cloud_functions/resources/authorizations/functions/README.md#get) - List Account Authorizations For Function
 
-### [nvcf.authorizations.functions](nvidia_cloud_functions_py/resources/nvcf/authorizations/functions/README.md)
+### [authorizations.functions.add](nvidia_cloud_functions/resources/authorizations/functions/add/README.md)
 
-* [create](nvidia_cloud_functions_py/resources/nvcf/authorizations/functions/README.md#create) - Authorize Accounts To Invoke Function
-* [delete](nvidia_cloud_functions_py/resources/nvcf/authorizations/functions/README.md#delete) - Delete All Extra Authorizations For Function
-* [get](nvidia_cloud_functions_py/resources/nvcf/authorizations/functions/README.md#get) - List Account Authorizations For Function
+* [patch](nvidia_cloud_functions/resources/authorizations/functions/add/README.md#patch) - Authorize Additional Account To Invoke Function
 
-### [nvcf.authorizations.functions.add](nvidia_cloud_functions_py/resources/nvcf/authorizations/functions/add/README.md)
+### [authorizations.functions.remove](nvidia_cloud_functions/resources/authorizations/functions/remove/README.md)
 
-* [patch](nvidia_cloud_functions_py/resources/nvcf/authorizations/functions/add/README.md#patch) - Authorize Additional Account To Invoke Function
+* [patch](nvidia_cloud_functions/resources/authorizations/functions/remove/README.md#patch) - Unauthorize Account From Invoking Function
 
-### [nvcf.authorizations.functions.remove](nvidia_cloud_functions_py/resources/nvcf/authorizations/functions/remove/README.md)
+### [authorizations.functions.versions](nvidia_cloud_functions/resources/authorizations/functions/versions/README.md)
 
-* [patch](nvidia_cloud_functions_py/resources/nvcf/authorizations/functions/remove/README.md#patch) - Unauthorize Account From Invoking Function
+* [create](nvidia_cloud_functions/resources/authorizations/functions/versions/README.md#create) - Authorize Accounts To Invoke Function Version
+* [delete](nvidia_cloud_functions/resources/authorizations/functions/versions/README.md#delete) - Delete All Extra Authorizations For Function Version
+* [get](nvidia_cloud_functions/resources/authorizations/functions/versions/README.md#get) - Get Account Authorizations For Function Version
 
-### [nvcf.authorizations.functions.versions](nvidia_cloud_functions_py/resources/nvcf/authorizations/functions/versions/README.md)
+### [authorizations.functions.versions.add](nvidia_cloud_functions/resources/authorizations/functions/versions/add/README.md)
 
-* [create](nvidia_cloud_functions_py/resources/nvcf/authorizations/functions/versions/README.md#create) - Authorize Accounts To Invoke Function Version
-* [delete](nvidia_cloud_functions_py/resources/nvcf/authorizations/functions/versions/README.md#delete) - Delete All Extra Authorizations For Function Version
-* [get](nvidia_cloud_functions_py/resources/nvcf/authorizations/functions/versions/README.md#get) - Get Account Authorizations For Function Version
+* [patch](nvidia_cloud_functions/resources/authorizations/functions/versions/add/README.md#patch) - Authorize Additional Account To Invoke Function Version
 
-### [nvcf.authorizations.functions.versions.add](nvidia_cloud_functions_py/resources/nvcf/authorizations/functions/versions/add/README.md)
+### [authorizations.functions.versions.remove](nvidia_cloud_functions/resources/authorizations/functions/versions/remove/README.md)
 
-* [patch](nvidia_cloud_functions_py/resources/nvcf/authorizations/functions/versions/add/README.md#patch) - Authorize Additional Account To Invoke Function Version
+* [patch](nvidia_cloud_functions/resources/authorizations/functions/versions/remove/README.md#patch) - Unauthorize Account From Invoking Function Version
 
-### [nvcf.authorizations.functions.versions.remove](nvidia_cloud_functions_py/resources/nvcf/authorizations/functions/versions/remove/README.md)
+### [cluster_groups](nvidia_cloud_functions/resources/cluster_groups/README.md)
 
-* [patch](nvidia_cloud_functions_py/resources/nvcf/authorizations/functions/versions/remove/README.md#patch) - Unauthorize Account From Invoking Function Version
+* [list](nvidia_cloud_functions/resources/cluster_groups/README.md#list) - List Cluster Groups
 
-### [nvcf.cluster_groups](nvidia_cloud_functions_py/resources/nvcf/cluster_groups/README.md)
+### [deployments.functions.versions](nvidia_cloud_functions/resources/deployments/functions/versions/README.md)
 
-* [list](nvidia_cloud_functions_py/resources/nvcf/cluster_groups/README.md#list) - List Cluster Groups
+* [create](nvidia_cloud_functions/resources/deployments/functions/versions/README.md#create) - Deploy Function
+* [delete](nvidia_cloud_functions/resources/deployments/functions/versions/README.md#delete) - Delete Function Deployment
+* [get](nvidia_cloud_functions/resources/deployments/functions/versions/README.md#get) - Get Function Deployment Details
+* [update](nvidia_cloud_functions/resources/deployments/functions/versions/README.md#update) - Update Function Deployment
 
-### [nvcf.deployments.functions.versions](nvidia_cloud_functions_py/resources/nvcf/deployments/functions/versions/README.md)
+### [exec.functions](nvidia_cloud_functions/resources/exec/functions/README.md)
 
-* [create](nvidia_cloud_functions_py/resources/nvcf/deployments/functions/versions/README.md#create) - Deploy Function
-* [delete](nvidia_cloud_functions_py/resources/nvcf/deployments/functions/versions/README.md#delete) - Delete Function Deployment
-* [get](nvidia_cloud_functions_py/resources/nvcf/deployments/functions/versions/README.md#get) - Get Function Deployment Details
-* [update](nvidia_cloud_functions_py/resources/nvcf/deployments/functions/versions/README.md#update) - Update Function Deployment
+* [create](nvidia_cloud_functions/resources/exec/functions/README.md#create) - Call Function
 
-### [nvcf.exec.functions](nvidia_cloud_functions_py/resources/nvcf/exec/functions/README.md)
+### [exec.functions.versions](nvidia_cloud_functions/resources/exec/functions/versions/README.md)
 
-* [create](nvidia_cloud_functions_py/resources/nvcf/exec/functions/README.md#create) - Call Function
+* [create](nvidia_cloud_functions/resources/exec/functions/versions/README.md#create) - Call Function
 
-### [nvcf.exec.functions.versions](nvidia_cloud_functions_py/resources/nvcf/exec/functions/versions/README.md)
+### [exec.status](nvidia_cloud_functions/resources/exec/status/README.md)
 
-* [create](nvidia_cloud_functions_py/resources/nvcf/exec/functions/versions/README.md#create) - Call Function
+* [get](nvidia_cloud_functions/resources/exec/status/README.md#get) - Poll For Result Using Function Invocation Request
 
-### [nvcf.exec.status](nvidia_cloud_functions_py/resources/nvcf/exec/status/README.md)
+### [functions](nvidia_cloud_functions/resources/functions/README.md)
 
-* [get](nvidia_cloud_functions_py/resources/nvcf/exec/status/README.md#get) - Poll For Result Using Function Invocation Request
+* [create](nvidia_cloud_functions/resources/functions/README.md#create) - Create Function
+* [list](nvidia_cloud_functions/resources/functions/README.md#list) - List Functions
 
-### [nvcf.functions](nvidia_cloud_functions_py/resources/nvcf/functions/README.md)
+### [functions.ids](nvidia_cloud_functions/resources/functions/ids/README.md)
 
-* [create](nvidia_cloud_functions_py/resources/nvcf/functions/README.md#create) - Create Function
-* [list](nvidia_cloud_functions_py/resources/nvcf/functions/README.md#list) - List Functions
+* [list](nvidia_cloud_functions/resources/functions/ids/README.md#list) - List Function Ids
 
-### [nvcf.functions.ids](nvidia_cloud_functions_py/resources/nvcf/functions/ids/README.md)
+### [functions.versions](nvidia_cloud_functions/resources/functions/versions/README.md)
 
-* [list](nvidia_cloud_functions_py/resources/nvcf/functions/ids/README.md#list) - List Function Ids
+* [create](nvidia_cloud_functions/resources/functions/versions/README.md#create) - Create Function Version
+* [delete](nvidia_cloud_functions/resources/functions/versions/README.md#delete) - Delete Function
+* [get](nvidia_cloud_functions/resources/functions/versions/README.md#get) - Get Function Version Details
+* [list](nvidia_cloud_functions/resources/functions/versions/README.md#list) - List Function Versions
 
-### [nvcf.functions.versions](nvidia_cloud_functions_py/resources/nvcf/functions/versions/README.md)
+### [health](nvidia_cloud_functions/resources/health/README.md)
 
-* [create](nvidia_cloud_functions_py/resources/nvcf/functions/versions/README.md#create) - Create Function Version
-* [delete](nvidia_cloud_functions_py/resources/nvcf/functions/versions/README.md#delete) - Delete Function
-* [get](nvidia_cloud_functions_py/resources/nvcf/functions/versions/README.md#get) - Get Function Version Details
-* [list](nvidia_cloud_functions_py/resources/nvcf/functions/versions/README.md#list) - List Function Versions
+* [list](nvidia_cloud_functions/resources/health/README.md#list) - Get Health Information
 
-### [nvcf.pexec.functions](nvidia_cloud_functions_py/resources/nvcf/pexec/functions/README.md)
+### [pexec.functions](nvidia_cloud_functions/resources/pexec/functions/README.md)
 
-* [create](nvidia_cloud_functions_py/resources/nvcf/pexec/functions/README.md#create) - Call Function
+* [create](nvidia_cloud_functions/resources/pexec/functions/README.md#create) - Call Function
 
-### [nvcf.pexec.functions.versions](nvidia_cloud_functions_py/resources/nvcf/pexec/functions/versions/README.md)
+### [pexec.functions.versions](nvidia_cloud_functions/resources/pexec/functions/versions/README.md)
 
-* [create](nvidia_cloud_functions_py/resources/nvcf/pexec/functions/versions/README.md#create) - Call Function
+* [create](nvidia_cloud_functions/resources/pexec/functions/versions/README.md#create) - Call Function
 
-### [nvcf.pexec.status](nvidia_cloud_functions_py/resources/nvcf/pexec/status/README.md)
+### [pexec.status](nvidia_cloud_functions/resources/pexec/status/README.md)
 
-* [get](nvidia_cloud_functions_py/resources/nvcf/pexec/status/README.md#get) - Poll For Result Using Function Invocation Request
+* [get](nvidia_cloud_functions/resources/pexec/status/README.md#get) - Poll For Result Using Function Invocation Request
 
-### [nvcf.queues.functions](nvidia_cloud_functions_py/resources/nvcf/queues/functions/README.md)
+### [queues.functions](nvidia_cloud_functions/resources/queues/functions/README.md)
 
-* [get](nvidia_cloud_functions_py/resources/nvcf/queues/functions/README.md#get) - Queue Details
+* [get](nvidia_cloud_functions/resources/queues/functions/README.md#get) - Queue Details
 
-### [nvcf.queues.functions.versions](nvidia_cloud_functions_py/resources/nvcf/queues/functions/versions/README.md)
+### [queues.functions.versions](nvidia_cloud_functions/resources/queues/functions/versions/README.md)
 
-* [get](nvidia_cloud_functions_py/resources/nvcf/queues/functions/versions/README.md#get) - Queue Details
+* [get](nvidia_cloud_functions/resources/queues/functions/versions/README.md#get) - Queue Details
 
-### [nvcf.queues.position](nvidia_cloud_functions_py/resources/nvcf/queues/position/README.md)
+### [queues.position](nvidia_cloud_functions/resources/queues/position/README.md)
 
-* [list](nvidia_cloud_functions_py/resources/nvcf/queues/position/README.md#list) - Queue Position
+* [list](nvidia_cloud_functions/resources/queues/position/README.md#list) - Queue Position
 
 <!-- MODULE DOCS END -->

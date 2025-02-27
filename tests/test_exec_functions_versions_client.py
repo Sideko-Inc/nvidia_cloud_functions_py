@@ -6,15 +6,15 @@ from nvidia_cloud_functions.environment import Environment
 from nvidia_cloud_functions.types import models
 
 
-def test_list_200_generated_success():
-    """Tests a GET request to the /health/** endpoint.
+def test_create_200_success_default():
+    """Tests a POST request to the /v2/nvcf/exec/functions/{functionId}/versions/{versionId} endpoint.
 
-    Operation: list
-    Test Case ID: generated_success
+    Operation: create
+    Test Case ID: success_default
     Expected Status: 200
     Mode: Synchronous execution
 
-    Response : models.HealthComponent
+    Response : models.InvokeFunctionResponse
 
     Validates:
     - Authentication requirements are satisfied
@@ -26,9 +26,13 @@ def test_list_200_generated_success():
     """
     # tests calling sync method with example data
     client = Client(environment=Environment.MOCK_SERVER)
-    response = client.health.list_fn()
+    response = client.exec.functions.versions.create(
+        function_id="3e4666bf-d5e5-4aa7-b8ce-cefe41c7568a",
+        request_body={},
+        version_id="3e4666bf-d5e5-4aa7-b8ce-cefe41c7568a",
+    )
     try:
-        pydantic.TypeAdapter(models.HealthComponent).validate_python(response)
+        pydantic.TypeAdapter(models.InvokeFunctionResponse).validate_python(response)
         is_json = True
     except pydantic.ValidationError:
         is_json = False
@@ -36,15 +40,15 @@ def test_list_200_generated_success():
 
 
 @pytest.mark.asyncio
-async def test_await_list_200_generated_success():
-    """Tests a GET request to the /health/** endpoint.
+async def test_await_create_200_success_default():
+    """Tests a POST request to the /v2/nvcf/exec/functions/{functionId}/versions/{versionId} endpoint.
 
-    Operation: list
-    Test Case ID: generated_success
+    Operation: create
+    Test Case ID: success_default
     Expected Status: 200
     Mode: Asynchronous execution
 
-    Response : models.HealthComponent
+    Response : models.InvokeFunctionResponse
 
     Validates:
     - Authentication requirements are satisfied
@@ -56,9 +60,13 @@ async def test_await_list_200_generated_success():
     """
     # tests calling async method with example data
     client = AsyncClient(environment=Environment.MOCK_SERVER)
-    response = await client.health.list_fn()
+    response = await client.exec.functions.versions.create(
+        function_id="3e4666bf-d5e5-4aa7-b8ce-cefe41c7568a",
+        request_body={},
+        version_id="3e4666bf-d5e5-4aa7-b8ce-cefe41c7568a",
+    )
     try:
-        pydantic.TypeAdapter(models.HealthComponent).validate_python(response)
+        pydantic.TypeAdapter(models.InvokeFunctionResponse).validate_python(response)
         is_json = True
     except pydantic.ValidationError:
         is_json = False
