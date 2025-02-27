@@ -43,9 +43,7 @@ Lists details of all the versions of the specified function in the authenticated
 from nvidia_cloud_functions import Client
 
 client = Client()
-res = client.functions.versions.list_fn(
-    function_id="3e4666bf-d5e5-4aa7-b8ce-cefe41c7568a"
-)
+res = client.functions.versions.list(function_id="3e4666bf-d5e5-4aa7-b8ce-cefe41c7568a")
 ```
 
 #### Asynchronous Client
@@ -54,7 +52,7 @@ res = client.functions.versions.list_fn(
 from nvidia_cloud_functions import AsyncClient
 
 client = AsyncClient()
-res = await client.functions.versions.list_fn(
+res = await client.functions.versions.list(
     function_id="3e4666bf-d5e5-4aa7-b8ce-cefe41c7568a"
 )
 ```

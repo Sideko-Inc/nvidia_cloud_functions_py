@@ -37,7 +37,7 @@ List assets owned by the current NVIDIA Cloud Account. Requires either a  bearer
 from nvidia_cloud_functions import Client
 
 client = Client()
-res = client.assets.list_fn()
+res = client.assets.list()
 ```
 
 #### Asynchronous Client
@@ -46,7 +46,7 @@ res = client.assets.list_fn()
 from nvidia_cloud_functions import AsyncClient
 
 client = AsyncClient()
-res = await client.assets.list_fn()
+res = await client.assets.list()
 ```
 
 ### get <a name="get"></a>

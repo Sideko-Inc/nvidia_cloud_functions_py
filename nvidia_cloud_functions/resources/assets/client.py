@@ -48,7 +48,7 @@ class AssetsClient:
             request_options=request_options or default_request_options(),
         )
 
-    def list_fn(
+    def list(
         self, *, request_options: typing.Optional[RequestOptions] = None
     ) -> models.ListAssetsResponse:
         """
@@ -70,7 +70,7 @@ class AssetsClient:
 
         Examples:
         ```py
-        client.assets.list_fn()
+        client.assets.list()
         ```
 
         """
@@ -198,7 +198,7 @@ class AsyncAssetsClient:
             request_options=request_options or default_request_options(),
         )
 
-    async def list_fn(
+    async def list(
         self, *, request_options: typing.Optional[RequestOptions] = None
     ) -> models.ListAssetsResponse:
         """
@@ -220,7 +220,7 @@ class AsyncAssetsClient:
 
         Examples:
         ```py
-        await client.assets.list_fn()
+        await client.assets.list()
         ```
 
         """

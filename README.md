@@ -96,10 +96,6 @@ client = AsyncClient()
 * [get](nvidia_cloud_functions/resources/functions/versions/README.md#get) - Get Function Version Details
 * [list](nvidia_cloud_functions/resources/functions/versions/README.md#list) - List Function Versions
 
-### [health](nvidia_cloud_functions/resources/health/README.md)
-
-* [list](nvidia_cloud_functions/resources/health/README.md#list) - Get Health Information
-
 ### [pexec.functions](nvidia_cloud_functions/resources/pexec/functions/README.md)
 
 * [create](nvidia_cloud_functions/resources/pexec/functions/README.md#create) - Call Function

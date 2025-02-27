@@ -58,7 +58,7 @@ class VersionsClient:
             request_options=request_options or default_request_options(),
         )
 
-    def list_fn(
+    def list(
         self,
         *,
         function_id: str,
@@ -84,7 +84,7 @@ class VersionsClient:
 
         Examples:
         ```py
-        client.functions.versions.list_fn(
+        client.functions.versions.list(
             function_id="3e4666bf-d5e5-4aa7-b8ce-cefe41c7568a"
         )
         ```
@@ -291,7 +291,7 @@ class AsyncVersionsClient:
             request_options=request_options or default_request_options(),
         )
 
-    async def list_fn(
+    async def list(
         self,
         *,
         function_id: str,
@@ -317,7 +317,7 @@ class AsyncVersionsClient:
 
         Examples:
         ```py
-        await client.functions.versions.list_fn(
+        await client.functions.versions.list(
             function_id="3e4666bf-d5e5-4aa7-b8ce-cefe41c7568a"
         )
         ```

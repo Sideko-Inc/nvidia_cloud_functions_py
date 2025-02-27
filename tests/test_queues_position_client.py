@@ -26,7 +26,7 @@ def test_list_200_generated_success():
     """
     # tests calling sync method with example data
     client = Client(environment=Environment.MOCK_SERVER)
-    response = client.queues.position.list_fn(
+    response = client.queues.position.list(
         request_id="3e4666bf-d5e5-4aa7-b8ce-cefe41c7568a"
     )
     try:
@@ -60,7 +60,7 @@ async def test_await_list_200_generated_success():
     """
     # tests calling async method with example data
     client = AsyncClient(environment=Environment.MOCK_SERVER)
-    response = await client.queues.position.list_fn(
+    response = await client.queues.position.list(
         request_id="3e4666bf-d5e5-4aa7-b8ce-cefe41c7568a"
     )
     try:

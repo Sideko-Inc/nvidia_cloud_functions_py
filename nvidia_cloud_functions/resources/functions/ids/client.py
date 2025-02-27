@@ -18,7 +18,7 @@ class IdsClient:
     def __init__(self, *, base_client: SyncBaseClient):
         self._base_client = base_client
 
-    def list_fn(
+    def list(
         self,
         *,
         visibility: typing.Union[
@@ -51,7 +51,7 @@ class IdsClient:
 
         Examples:
         ```py
-        client.functions.ids.list_fn()
+        client.functions.ids.list()
         ```
 
         """
@@ -82,7 +82,7 @@ class AsyncIdsClient:
     def __init__(self, *, base_client: AsyncBaseClient):
         self._base_client = base_client
 
-    async def list_fn(
+    async def list(
         self,
         *,
         visibility: typing.Union[
@@ -115,7 +115,7 @@ class AsyncIdsClient:
 
         Examples:
         ```py
-        await client.functions.ids.list_fn()
+        await client.functions.ids.list()
         ```
 
         """

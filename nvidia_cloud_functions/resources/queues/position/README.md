@@ -12,7 +12,7 @@ Using the specified function invocation request id, returns the estimated  posit
 from nvidia_cloud_functions import Client
 
 client = Client()
-res = client.queues.position.list_fn(request_id="3e4666bf-d5e5-4aa7-b8ce-cefe41c7568a")
+res = client.queues.position.list(request_id="3e4666bf-d5e5-4aa7-b8ce-cefe41c7568a")
 ```
 
 #### Asynchronous Client
@@ -21,7 +21,7 @@ res = client.queues.position.list_fn(request_id="3e4666bf-d5e5-4aa7-b8ce-cefe41c
 from nvidia_cloud_functions import AsyncClient
 
 client = AsyncClient()
-res = await client.queues.position.list_fn(
+res = await client.queues.position.list(
     request_id="3e4666bf-d5e5-4aa7-b8ce-cefe41c7568a"
 )
 ```

@@ -12,7 +12,7 @@ Lists Cluster Groups for the current account. The response includes cluster  gro
 from nvidia_cloud_functions import Client
 
 client = Client()
-res = client.cluster_groups.list_fn()
+res = client.cluster_groups.list()
 ```
 
 #### Asynchronous Client
@@ -21,5 +21,5 @@ res = client.cluster_groups.list_fn()
 from nvidia_cloud_functions import AsyncClient
 
 client = AsyncClient()
-res = await client.cluster_groups.list_fn()
+res = await client.cluster_groups.list()
 ```

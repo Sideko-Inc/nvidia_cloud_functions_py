@@ -1,6 +1,13 @@
 import httpx
 import typing
 
+from nvidia_cloud_functions.resources.functions import (
+    AsyncFunctionsClient,
+    FunctionsClient,
+)
+from nvidia_cloud_functions.environment import Environment
+from nvidia_cloud_functions.core import AsyncBaseClient, SyncBaseClient
+from nvidia_cloud_functions.resources.queues import AsyncQueuesClient, QueuesClient
 from nvidia_cloud_functions.resources.exec import AsyncExecClient, ExecClient
 from nvidia_cloud_functions.resources.assets import AssetsClient, AsyncAssetsClient
 from nvidia_cloud_functions.resources.deployments import (
@@ -11,17 +18,10 @@ from nvidia_cloud_functions.resources.cluster_groups import (
     AsyncClusterGroupsClient,
     ClusterGroupsClient,
 )
-from nvidia_cloud_functions.environment import Environment
-from nvidia_cloud_functions.resources.functions import (
-    AsyncFunctionsClient,
-    FunctionsClient,
-)
 from nvidia_cloud_functions.resources.authorizations import (
     AsyncAuthorizationsClient,
     AuthorizationsClient,
 )
-from nvidia_cloud_functions.core import AsyncBaseClient, SyncBaseClient
-from nvidia_cloud_functions.resources.queues import AsyncQueuesClient, QueuesClient
 from nvidia_cloud_functions.resources.pexec import AsyncPexecClient, PexecClient
 
 

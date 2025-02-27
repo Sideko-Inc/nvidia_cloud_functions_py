@@ -2,7 +2,6 @@ from .authorized_party_dto import AuthorizedPartyDto
 from .instance_dto import InstanceDto
 from .container_environment_entry_dto import ContainerEnvironmentEntryDto
 from .artifact_dto import ArtifactDto
-from .health_component import HealthComponent
 from .asset_dto import AssetDto
 from .asset_response import AssetResponse
 from .cluster import Cluster
@@ -63,7 +62,6 @@ __all__ = [
     "GetQueuesResponse",
     "Gpu",
     "GpuSpecificationDto",
-    "HealthComponent",
     "InstanceDto",
     "InstanceType",
     "InvokeFunctionResponse",
