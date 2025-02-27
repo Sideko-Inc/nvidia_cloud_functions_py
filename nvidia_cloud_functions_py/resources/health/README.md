@@ -12,7 +12,7 @@ Get Health Information about this service
 from nvidia_cloud_functions_py import Client
 
 client = Client()
-res = client.health.list()
+res = client.health.list_fn()
 ```
 
 #### Asynchronous Client
@@ -21,5 +21,5 @@ res = client.health.list()
 from nvidia_cloud_functions_py import AsyncClient
 
 client = AsyncClient()
-res = await client.health.list()
+res = await client.health.list_fn()
 ```

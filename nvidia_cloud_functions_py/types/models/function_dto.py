@@ -87,7 +87,7 @@ class FunctionDto(pydantic.BaseModel):
     """
     Entrypoint for invoking the container to process requests
     """
-    models: typing.Optional[typing.List[ArtifactDto]] = pydantic.Field(
+    models_field: typing.Optional[typing.List[ArtifactDto]] = pydantic.Field(
         alias="models", default=None
     )
     """

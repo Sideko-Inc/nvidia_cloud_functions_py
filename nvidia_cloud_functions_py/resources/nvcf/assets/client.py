@@ -48,7 +48,7 @@ class AssetsClient:
             request_options=request_options or default_request_options(),
         )
 
-    def list(
+    def list_fn(
         self, *, request_options: typing.Optional[RequestOptions] = None
     ) -> models.ListAssetsResponse:
         """
@@ -70,7 +70,7 @@ class AssetsClient:
 
         Examples:
         ```py
-        client.nvcf.assets.list()
+        client.nvcf.assets.list_fn()
         ```
 
         """
@@ -198,7 +198,7 @@ class AsyncAssetsClient:
             request_options=request_options or default_request_options(),
         )
 
-    async def list(
+    async def list_fn(
         self, *, request_options: typing.Optional[RequestOptions] = None
     ) -> models.ListAssetsResponse:
         """
@@ -220,7 +220,7 @@ class AsyncAssetsClient:
 
         Examples:
         ```py
-        await client.nvcf.assets.list()
+        await client.nvcf.assets.list_fn()
         ```
 
         """

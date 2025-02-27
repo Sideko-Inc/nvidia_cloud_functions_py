@@ -13,7 +13,7 @@ class HealthClient:
     def __init__(self, *, base_client: SyncBaseClient):
         self._base_client = base_client
 
-    def list(
+    def list_fn(
         self, *, request_options: typing.Optional[RequestOptions] = None
     ) -> models.HealthComponent:
         """
@@ -35,7 +35,7 @@ class HealthClient:
 
         Examples:
         ```py
-        client.health.list()
+        client.health.list_fn()
         ```
 
         """
@@ -51,7 +51,7 @@ class AsyncHealthClient:
     def __init__(self, *, base_client: AsyncBaseClient):
         self._base_client = base_client
 
-    async def list(
+    async def list_fn(
         self, *, request_options: typing.Optional[RequestOptions] = None
     ) -> models.HealthComponent:
         """
@@ -73,7 +73,7 @@ class AsyncHealthClient:
 
         Examples:
         ```py
-        await client.health.list()
+        await client.health.list_fn()
         ```
 
         """

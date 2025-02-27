@@ -13,7 +13,7 @@ class PositionClient:
     def __init__(self, *, base_client: SyncBaseClient):
         self._base_client = base_client
 
-    def list(
+    def list_fn(
         self,
         *,
         request_id: str,
@@ -39,7 +39,7 @@ class PositionClient:
 
         Examples:
         ```py
-        client.nvcf.queues.position.list(
+        client.nvcf.queues.position.list_fn(
             request_id="3e4666bf-d5e5-4aa7-b8ce-cefe41c7568a"
         )
         ```
@@ -57,7 +57,7 @@ class AsyncPositionClient:
     def __init__(self, *, base_client: AsyncBaseClient):
         self._base_client = base_client
 
-    async def list(
+    async def list_fn(
         self,
         *,
         request_id: str,
@@ -83,7 +83,7 @@ class AsyncPositionClient:
 
         Examples:
         ```py
-        await client.nvcf.queues.position.list(
+        await client.nvcf.queues.position.list_fn(
             request_id="3e4666bf-d5e5-4aa7-b8ce-cefe41c7568a"
         )
         ```

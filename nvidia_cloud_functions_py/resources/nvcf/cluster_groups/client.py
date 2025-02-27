@@ -13,7 +13,7 @@ class ClusterGroupsClient:
     def __init__(self, *, base_client: SyncBaseClient):
         self._base_client = base_client
 
-    def list(
+    def list_fn(
         self, *, request_options: typing.Optional[RequestOptions] = None
     ) -> models.ClusterGroupsResponse:
         """
@@ -35,7 +35,7 @@ class ClusterGroupsClient:
 
         Examples:
         ```py
-        client.nvcf.cluster_groups.list()
+        client.nvcf.cluster_groups.list_fn()
         ```
 
         """
@@ -51,7 +51,7 @@ class AsyncClusterGroupsClient:
     def __init__(self, *, base_client: AsyncBaseClient):
         self._base_client = base_client
 
-    async def list(
+    async def list_fn(
         self, *, request_options: typing.Optional[RequestOptions] = None
     ) -> models.ClusterGroupsResponse:
         """
@@ -73,7 +73,7 @@ class AsyncClusterGroupsClient:
 
         Examples:
         ```py
-        await client.nvcf.cluster_groups.list()
+        await client.nvcf.cluster_groups.list_fn()
         ```
 
         """

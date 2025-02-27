@@ -12,7 +12,7 @@ Using the specified function invocation request id, returns the estimated  posit
 from nvidia_cloud_functions_py import Client
 
 client = Client()
-res = client.nvcf.queues.position.list(
+res = client.nvcf.queues.position.list_fn(
     request_id="3e4666bf-d5e5-4aa7-b8ce-cefe41c7568a"
 )
 ```
@@ -23,7 +23,7 @@ res = client.nvcf.queues.position.list(
 from nvidia_cloud_functions_py import AsyncClient
 
 client = AsyncClient()
-res = await client.nvcf.queues.position.list(
+res = await client.nvcf.queues.position.list_fn(
     request_id="3e4666bf-d5e5-4aa7-b8ce-cefe41c7568a"
 )
 ```

@@ -63,7 +63,7 @@ class CreateFunctionRequest(typing_extensions.TypedDict):
     Entrypoint for invoking the container to process a request
     """
 
-    models: typing_extensions.NotRequired[typing.List[ArtifactDto]]
+    models_field: typing_extensions.NotRequired[typing.List[ArtifactDto]]
     """
     Optional set of models
     """
@@ -112,7 +112,7 @@ class _SerializerCreateFunctionRequest(pydantic.BaseModel):
     inference_url: str = pydantic.Field(
         alias="inferenceUrl",
     )
-    models: typing.Optional[typing.List[_SerializerArtifactDto]] = pydantic.Field(
+    models_field: typing.Optional[typing.List[_SerializerArtifactDto]] = pydantic.Field(
         alias="models", default=None
     )
     name: str = pydantic.Field(

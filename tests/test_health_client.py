@@ -26,7 +26,7 @@ def test_list_200_generated_success():
     """
     # tests calling sync method with example data
     client = Client(environment=Environment.MOCK_SERVER)
-    response = client.health.list()
+    response = client.health.list_fn()
     try:
         pydantic.TypeAdapter(models.HealthComponent).validate_python(response)
         is_json = True
@@ -56,7 +56,7 @@ async def test_await_list_200_generated_success():
     """
     # tests calling async method with example data
     client = AsyncClient(environment=Environment.MOCK_SERVER)
-    response = await client.health.list()
+    response = await client.health.list_fn()
     try:
         pydantic.TypeAdapter(models.HealthComponent).validate_python(response)
         is_json = True

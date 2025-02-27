@@ -89,7 +89,7 @@ def test_list_200_generated_success():
     """
     # tests calling sync method with example data
     client = Client(environment=Environment.MOCK_SERVER)
-    response = client.nvcf.functions.list()
+    response = client.nvcf.functions.list_fn()
     try:
         pydantic.TypeAdapter(models.ListFunctionsResponse).validate_python(response)
         is_json = True
@@ -119,7 +119,7 @@ async def test_await_list_200_generated_success():
     """
     # tests calling async method with example data
     client = AsyncClient(environment=Environment.MOCK_SERVER)
-    response = await client.nvcf.functions.list()
+    response = await client.nvcf.functions.list_fn()
     try:
         pydantic.TypeAdapter(models.ListFunctionsResponse).validate_python(response)
         is_json = True

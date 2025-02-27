@@ -30,7 +30,7 @@ class FunctionsClient:
 
         self.ids = IdsClient(base_client=self._base_client)
 
-    def list(
+    def list_fn(
         self,
         *,
         visibility: typing.Union[
@@ -63,7 +63,7 @@ class FunctionsClient:
 
         Examples:
         ```py
-        client.nvcf.functions.list()
+        client.nvcf.functions.list_fn()
         ```
 
         """
@@ -120,7 +120,7 @@ class FunctionsClient:
         inference_port: typing.Union[
             typing.Optional[int], type_utils.NotGiven
         ] = type_utils.NOT_GIVEN,
-        models: typing.Union[
+        models_field: typing.Union[
             typing.Optional[typing.List[params.ArtifactDto]], type_utils.NotGiven
         ] = type_utils.NOT_GIVEN,
         resources: typing.Union[
@@ -175,7 +175,7 @@ class FunctionsClient:
                 "helm_chart": helm_chart,
                 "helm_chart_service_name": helm_chart_service_name,
                 "inference_port": inference_port,
-                "models": models,
+                "models_field": models_field,
                 "resources": resources,
                 "inference_url": inference_url,
                 "name": name,
@@ -199,7 +199,7 @@ class AsyncFunctionsClient:
 
         self.ids = AsyncIdsClient(base_client=self._base_client)
 
-    async def list(
+    async def list_fn(
         self,
         *,
         visibility: typing.Union[
@@ -232,7 +232,7 @@ class AsyncFunctionsClient:
 
         Examples:
         ```py
-        await client.nvcf.functions.list()
+        await client.nvcf.functions.list_fn()
         ```
 
         """
@@ -289,7 +289,7 @@ class AsyncFunctionsClient:
         inference_port: typing.Union[
             typing.Optional[int], type_utils.NotGiven
         ] = type_utils.NOT_GIVEN,
-        models: typing.Union[
+        models_field: typing.Union[
             typing.Optional[typing.List[params.ArtifactDto]], type_utils.NotGiven
         ] = type_utils.NOT_GIVEN,
         resources: typing.Union[
@@ -344,7 +344,7 @@ class AsyncFunctionsClient:
                 "helm_chart": helm_chart,
                 "helm_chart_service_name": helm_chart_service_name,
                 "inference_port": inference_port,
-                "models": models,
+                "models_field": models_field,
                 "resources": resources,
                 "inference_url": inference_url,
                 "name": name,

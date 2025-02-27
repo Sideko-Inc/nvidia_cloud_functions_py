@@ -12,7 +12,7 @@ Lists ids of all the functions in the authenticated NVIDIA Cloud Account.  Requi
 from nvidia_cloud_functions_py import Client
 
 client = Client()
-res = client.nvcf.functions.ids.list()
+res = client.nvcf.functions.ids.list_fn()
 ```
 
 #### Asynchronous Client
@@ -21,5 +21,5 @@ res = client.nvcf.functions.ids.list()
 from nvidia_cloud_functions_py import AsyncClient
 
 client = AsyncClient()
-res = await client.nvcf.functions.ids.list()
+res = await client.nvcf.functions.ids.list_fn()
 ```
